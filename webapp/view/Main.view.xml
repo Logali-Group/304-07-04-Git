@@ -1,6 +1,29 @@
-<mvc:View controllerName="git.controller.Main"
-    xmlns:mvc="sap.ui.core.mvc"
-    xmlns="sap.m">
-    <Page id="page" title="{i18n>title}">
-    </Page>
+<mvc:View   controllerName="git.controller.Main"
+            xmlns="sap.m"
+            xmlns:f="sap.f"
+            xmlns:mvc="sap.ui.core.mvc">
+
+    <f:DynamicPage id="dynamicPage">
+
+        <f:title>
+
+            <f:DynamicPageTitle id="dynamicPageHeader">
+
+                <f:heading>
+
+                    <Title id="titleMain"
+                            text="{i18n>appTitle}"/>
+
+                </f:heading>
+            
+            </f:DynamicPageTitle>
+        
+        </f:title>
+
+        <f:content>
+        
+        </f:content>
+
+    </f:DynamicPage>
+
 </mvc:View>
