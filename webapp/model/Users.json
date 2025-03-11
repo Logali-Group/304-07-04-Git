@@ -1,0 +1,75 @@
+{
+  "Users": [
+    {
+      "ID": 1,
+      "FullName": "Juan Pérez",
+      "Location": "Madrid, España",
+      "Email": "juan.perez@example.com",
+      "PhoneNumber": "+34 600 123 456"
+    },
+    {
+      "ID": 2,
+      "FullName": "María González",
+      "Location": "Barcelona, España",
+      "Email": "maria.gonzalez@example.com",
+      "PhoneNumber": "+34 611 987 654"
+    },
+    {
+      "ID": 3,
+      "FullName": "Carlos Rodríguez",
+      "Location": "Ciudad de México, México",
+      "Email": "carlos.rodriguez@example.com",
+      "PhoneNumber": "+52 55 1234 5678"
+    },
+    {
+      "ID": 4,
+      "FullName": "Laura Fernández",
+      "Location": "Buenos Aires, Argentina",
+      "Email": "laura.fernandez@example.com",
+      "PhoneNumber": "+54 9 11 2345 6789"
+    },
+    {
+      "ID": 5,
+      "FullName": "Andrés López",
+      "Location": "Bogotá, Colombia",
+      "Email": "andres.lopez@example.com",
+      "PhoneNumber": "+57 320 456 7890"
+    },
+    {
+      "ID": 6,
+      "FullName": "Sofía Ramírez",
+      "Location": "Santiago, Chile",
+      "Email": "sofia.ramirez@example.com",
+      "PhoneNumber": "+56 9 8765 4321"
+    },
+    {
+      "ID": 7,
+      "FullName": "Pedro Sánchez",
+      "Location": "Lima, Perú",
+      "Email": "pedro.sanchez@example.com",
+      "PhoneNumber": "+51 999 888 777"
+    },
+    {
+      "ID": 8,
+      "FullName": "Ana Martínez",
+      "Location": "Quito, Ecuador",
+      "Email": "ana.martinez@example.com",
+      "PhoneNumber": "+593 98 765 4321"
+    },
+    {
+      "ID": 9,
+      "FullName": "Miguel Torres",
+      "Location": "San José, Costa Rica",
+      "Email": "miguel.torres@example.com",
+      "PhoneNumber": "+506 7000 1234"
+    },
+    {
+      "ID": 10,
+      "FullName": "Isabel Gómez",
+      "Location": "Caracas, Venezuela",
+      "Email": "isabel.gomez@example.com",
+      "PhoneNumber": "+58 412 345 6789"
+    }
+  ]
+  
+}

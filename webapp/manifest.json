@@ -51,6 +51,10 @@
                 "settings": {
                     "bundleName": "git.i18n.i18n"
                 }
+            },
+            "users": {
+                "type":"sap.ui.model.json.JSONModel",
+                "uri": "model/Users.json"
             }
         },
         "resources": {
