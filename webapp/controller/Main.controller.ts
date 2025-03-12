@@ -1,9 +1,9 @@
 import Controller from "sap/ui/core/mvc/Controller";
 import Filter from "sap/ui/model/Filter";
 import FilterOperator from "sap/ui/model/FilterOperator";
-import Table from "sap/m/Table";
-import ListBinding from "sap/ui/model/ListBinding";
+import Table from "sap/ui/table/Table";
 import { Input$SubmitEvent } from "sap/m/Input";
+import ListBinding from "sap/ui/model/ListBinding";
 
 /**
  * @namespace git.controller
@@ -31,7 +31,7 @@ export default class Main extends Controller {
         }
 
         let oTable= this.byId("table") as Table;
-        let binding = oTable.getBinding("items") as ListBinding;
+        let binding = oTable.getBinding("rows") as ListBinding;
         binding.filter(aFilters);
 
     }
