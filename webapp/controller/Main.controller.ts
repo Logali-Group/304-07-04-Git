@@ -14,25 +14,4 @@ export default class Main extends Controller {
     public onInit(): void {
 
     }
-
-    public onFilterSubmit (event : Input$SubmitEvent) : void {
-
-        let sValue = event.getParameter("value");
-        let aFilters = [];
-
-        if (sValue) {
-            aFilters.push(new Filter({
-                filters: [
-                    new Filter("ID", FilterOperator.EQ, sValue),
-                    new Filter("FullName", FilterOperator.Contains, sValue)
-                ],
-                and: false
-            }))
-        }
-
-        let oTable= this.byId("table") as Table;
-        let binding = oTable.getBinding("items") as ListBinding;
-        binding.filter(aFilters);
-
-    }
 }

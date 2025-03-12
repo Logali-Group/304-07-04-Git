@@ -25,17 +25,6 @@
             <Table id="table"
                     items="{users>/Users}">
 
-                <headerToolbar>
-                    <Toolbar id="toolbar">
-                        <Title id="headerTitble"
-                                text="{i18n>users}"/>
-                    <ToolbarSpacer id="toolbarSpacer"/>
-                    <Input id="search"
-                            submit="onFilterSubmit"
-                            width="40%"/>
-                    </Toolbar>
-                </headerToolbar>
-
                 <columns>
 
                     <Column id="id">
