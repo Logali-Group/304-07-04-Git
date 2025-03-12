@@ -22,7 +22,7 @@
 
         <f:content>
 
-            <Table id="table"
+            <List id="table"
                     items="{users>/Users}">
 
                 <headerToolbar>
@@ -36,59 +36,15 @@
                     </Toolbar>
                 </headerToolbar>
 
-                <columns>
-
-                    <Column id="id">
-                        <Text id="textID"
-                                text="{i18n>id}"/>
-                    </Column>
-
-                    <Column id="fullName">
-                        <Text id="textFullName"
-                                text="{i18n>fullName}"/>
-                    </Column>
-
-                    <Column id="location">
-                        <Text id="textLocation"
-                                text="{i18n>location}"/>
-                    </Column>
-
-                    <Column id="email">
-                        <Text id="textEmail"
-                                text="{i18n>email}"/>
-                    </Column>
-
-                    <Column id="phoneNumber">
-                        <Text id="textPhoneNumber"  
-                                text="{i18n>phoneNumber}"/>
-                    </Column>
-                
-                </columns>
-
                 <items>
 
-                    <ColumnListItem id="columnListItem">
-                    
-                        <cells>
-
-                            <ObjectIdentifier id="user-id"
-                                            text="{users>ID}"/>
-                            <Label id="user-fullName"
-                                    text="{users>FullName}"/>
-                            <Label id="user-location"
-                                    text="{users>Location}"/>
-                            <Label
-                                    id="user-email"
-                                    text="{users>Email}"/>
-                            <Label id="user-phoneNumber"
-                                    text="{users>PhoneNumber}"/>
-                        </cells>
-
-                    </ColumnListItem>
+                    <StandardListItem id="standarListItem"
+                                        title="{users>FullName}"
+                                        description="{users>ID}"/>
 
                 </items>
 
-            </Table>
+            </List>
         
         </f:content>
 
