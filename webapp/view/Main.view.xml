@@ -29,6 +29,10 @@
                     <Toolbar id="toolbar">
                         <Title id="headerTitble"
                                 text="{i18n>users}"/>
+                    <ToolbarSpacer id="toolbarSpacer"/>
+                    <SearchField id="search"
+                            search="onFilterSearch"
+                            width="40%"/>
                     </Toolbar>
                 </headerToolbar>
 
