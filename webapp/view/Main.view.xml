@@ -25,6 +25,13 @@
             <Table id="table"
                     items="{users>/Users}">
 
+                <headerToolbar>
+                    <Toolbar id="toolbar">
+                        <Title id="headerTitble"
+                                text="{i18n>users}"/>
+                    </Toolbar>
+                </headerToolbar>
+
                 <columns>
 
                     <Column id="id">
