@@ -23,8 +23,7 @@ export default class Main extends Controller {
         if (sValue) {
             aFilters.push(new Filter({
                 filters: [
-                    new Filter("ID", FilterOperator.EQ, sValue),
-                    new Filter("FullName", FilterOperator.Contains, sValue)
+                    new Filter("ID", FilterOperator.EQ, sValue)
                 ],
                 and: false
             }))
