@@ -1,6 +1,7 @@
 <mvc:View   controllerName="git.controller.Main"
             xmlns="sap.m"
             xmlns:f="sap.f"
+            xmlns:table="sap.ui.table"
             xmlns:mvc="sap.ui.core.mvc">
 
     <f:DynamicPage id="dynamicPage">
@@ -22,30 +23,63 @@
 
         <f:content>
 
-            <List id="table"
-                    items="{users>/Users}">
+            <table:Table id="table"
+                        rows="{users>/Users}">
 
-                <headerToolbar>
-                    <Toolbar id="toolbar">
-                        <Title id="headerTitble"
-                                text="{i18n>users}"/>
-                    <ToolbarSpacer id="toolbarSpacer"/>
-                    <Input id="search"
-                            submit="onFilterSubmit"
-                            width="40%"/>
-                    </Toolbar>
-                </headerToolbar>
+                    <table:extension>
 
-                <items>
+                        <OverflowToolbar id="headerToolbar">
+                            <Title id="titleHeader"
+                                    text="{i18n>users}"/>
+                            <ToolbarSpacer id="toolbarSpacer"/>
+                            <Input id="filter"
+                                    submit="onFilterSubmit"
+                                    width="40%"/>
+                        </OverflowToolbar>
+                    
+                    </table:extension>
 
-                    <StandardListItem id="standarListItem"
-                                        title="{users>FullName}"
-                                        description="{users>ID}"/>
+                    <table:columns>
 
-                </items>
+                        <table:Column id="id">
+                            <Label id="labelId" text="{i18n>id}"/>
+                            <table:template>
+                                <Text id="textId" text="{users>ID}"/>
+                            </table:template>
+                        </table:Column>
 
-            </List>
-        
+                        <table:Column id="fullName">
+                            <Label id="labelFullName" text="{i18n>fullName}"/>
+                            <table:template>
+                                <Text id="textFullName" text="{users>FullName}"/>
+                            </table:template>
+                        </table:Column>
+
+                        <table:Column id="location">
+                            <Label id="labelLocation" text="{i18n>location}"/>
+                            <table:template>
+                                <Text id="textLocation" text="{users>Location}"/>
+                            </table:template>
+                        </table:Column>
+
+                        <table:Column id="email">
+                            <Label id="labelEmail" text="{i18n>email}"/>
+                            <table:template>
+                                <Text id="textEmail" text="{users>Email}"/>
+                            </table:template>
+                        </table:Column>
+
+                        <table:Column id="phoneNumber">
+                            <Label id="labelPhoneNumber" text="{i18n>phoneNumber}"/>
+                            <table:template>
+                                <Text id="textPhoneNumber" text="{users>PhoneNumber}"/>
+                            </table:template>
+                        </table:Column>
+                    
+                    </table:columns>
+
+            </table:Table>
+
         </f:content>
 
     </f:DynamicPage>
