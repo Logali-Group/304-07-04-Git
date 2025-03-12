@@ -30,8 +30,8 @@
                         <Title id="headerTitble"
                                 text="{i18n>users}"/>
                     <ToolbarSpacer id="toolbarSpacer"/>
-                    <SearchField id="search"
-                            search="onFilterSearch"
+                    <Input id="search"
+                            submit="onFilterSubmit"
                             width="40%"/>
                     </Toolbar>
                 </headerToolbar>
